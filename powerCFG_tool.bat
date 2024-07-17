@@ -30,7 +30,7 @@ goto exit
 
 rem dir_ function. Create folder for host computer if not existing. CD to host computer folder.
 :dir_
-cd [ENTER DESIRED DIRECTORY PATH HERE]
+cd [ENTER DESIRED DIRECTORY FOLDERPATH HERE]
 echo             _______&& color 0E
 echo      ______/  ____/_____    
 echo     /     /  /         /
