@@ -2,10 +2,14 @@ CLS
 @echo off
 setlocal enabledelayedexpansion
 
-echo    __________ __    ___   ___  __  ________  __ && color 02
-echo   / __/ __/ // /___/ _ | / _ \/  |/  /  _/ |/ /
-echo  _\ \_\ \/ _  /___/ __ |/ // / /|_/ // //    / 
-echo /___/___/_//_/   /_/ |_/____/_/  /_/___/_/|_/ 
+echo.
+echo ███████╗███████╗██╗  ██╗       █████╗ ██████╗ ███╗   ███╗██╗███╗   ██╗
+echo ██╔════╝██╔════╝██║  ██║      ██╔══██╗██╔══██╗████╗ ████║██║████╗  ██║
+echo ███████╗███████╗███████║█████╗███████║██║  ██║██╔████╔██║██║██╔██╗ ██║
+echo ╚════██║╚════██║██╔══██║╚════╝██╔══██║██║  ██║██║╚██╔╝██║██║██║╚██╗██║
+echo ███████║███████║██║  ██║      ██║  ██║██████╔╝██║ ╚═╝ ██║██║██║ ╚████║
+echo ╚══════╝╚══════╝╚═╝  ╚═╝      ╚═╝  ╚═╝╚═════╝ ╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝
+echo.
 
 rem dateStr variable used for logging whenever the script is launched
 for /f "tokens=1-3 delims=/ " %%a in ('echo %date%') do (
@@ -30,9 +34,9 @@ rem ping the host ip to verify that you can connect
 ping HOST_IP_HERE | find "TTL=" >nul
 rem notify user of ping result before reaching host
 if errorlevel 1 (
-    echo ಥ╭╮ಥ error: host is not reachable. please try again.
+    echo {0C}error: host is not reachable. please try again.{#}{\n}
 ) else (
-    echo ✿◠‿◠ success: host is reachable. proceed to ssh.
+    echo {02}success: host is reachable. proceed to ssh.{#}{\n}
 )
 
 rem ssh into host
