@@ -30,7 +30,7 @@ goto exit
 
 rem dir_ function. Create folder for host computer if not existing. CD to host computer folder.
 :dir_
-cd C:\Users\dionh\OneDrive\Desktop\Dion\SYS\sys_logs\windows\powercfg
+cd INSERT_FOLDER_PATH_HERE
 echo             _______&& color 0E
 echo      ______/  ____/_____    
 echo     /     /  /         /
